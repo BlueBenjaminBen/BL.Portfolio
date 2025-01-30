@@ -1,39 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benjamin Le</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-</head>
-<body class="min-h-screen bg-black text-white">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- consider using this stock footage for animated background:
      https://www.youtube.com/watch?v=Okb1TjsZlm0-->
-<nav class="bg-blue-950">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <span class="font-monoton text-4xl whitespace-nowrap text-[#4CBB17]">BL</span>
-    <div class="flex order-2 rtl:space-x-reverse">
-      <ul class="flex font-medium p-2 rounded-lg space-x-8 rtl:space-x-reverse flex-row  ">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white hover:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-white hover:text-blue-500">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-white  hover:text-blue-500">Projects</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-white  hover:text-blue-500">Contact</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-  
-
-</body>
+    <nav class="bg-blue-950">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+      >
+        <span class="font-monoton text-4xl whitespace-nowrap text-[#4CBB17]"
+          >BL</span
+        >
+        <div class="flex order-2 rtl:space-x-reverse">
+          <ul
+            class="flex font-medium p-2 rounded-lg space-x-8 rtl:space-x-reverse flex-row"
+          >
+            <li>
+              <a
+                href="#"
+                class="py-2 px-3 text-white hover:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+    <section class="container">
+      <div class="w-screen h-screen flex-auto relative">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover">
+          <source src="./vids/youtube_Okb1TjsZlm0_1920x1080_h264_mute.mp4"/>
+          Video Not available
+        </video>
+        <img class="rounded-full w-64 h-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full object-cover" src="./img/IMG_4750.jpg"/>
+        <div class="absolute text-center top-[50%] w-full text-[40px] tracking-[4px] py-[20px]">
+          <span class="text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]">Benjamin Le <br/></span>
+          <span class=" text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]">IT/Cybersecurity Enthusiast</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      Testing
+    </section>
+  </body>
 </html>
