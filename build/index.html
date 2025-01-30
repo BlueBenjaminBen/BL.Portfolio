@@ -12,14 +12,13 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- consider using this stock footage for animated background:
-     https://www.youtube.com/watch?v=Okb1TjsZlm0-->
+  <body class="bg-blue-950">
     <nav class="bg-blue-950">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
       >
-        <span class="font-monoton text-4xl whitespace-nowrap text-[#4CBB17]"
+      <!-- text-[#4CBB17] og color-->
+        <span class="font-monoton text-4xl whitespace-nowrap text-[#6fff2c]" 
           >BL</span
         >
         <div class="flex order-2 rtl:space-x-reverse">
@@ -35,39 +34,63 @@
               >
             </li>
             <li>
-              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+              <a href="#" class="py-2 px-3 text-white hover:text-blue-500"
                 >About</a
               >
             </li>
             <li>
-              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+              <a href="#" class="py-2 px-3 text-white hover:text-blue-500"
                 >Projects</a
               >
             </li>
             <li>
-              <a href="#" class=" py-2 px-3 text-white hover:text-blue-500"
+              <a href="#" class="py-2 px-3 text-white hover:text-blue-500"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
       </div>
-    </nav>  
+    </nav>
     <section class="container">
       <div class="w-screen h-screen flex-auto relative">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover">
-          <source src="./vids/youtube_Okb1TjsZlm0_1920x1080_h264_mute.mp4"/>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="w-full h-full object-cover"
+        >
+          <source src="./vids/youtube_Okb1TjsZlm0_1920x1080_h264_mute.mp4" />
           Video Not available
         </video>
-        <img class="rounded-full w-64 h-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full object-cover" src="./img/IMG_4750.jpg"/>
-        <div class="absolute text-center top-[50%] w-full text-[40px] tracking-[4px] py-[20px]">
-          <span class="text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]">Benjamin Le <br/></span>
-          <span class=" text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]">IT/Cybersecurity Enthusiast</span>
+        <img
+          class="rounded-full w-64 h-64 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full object-cover"
+          src="./img/IMG_4750.jpg"
+        />
+    
+      <div
+          class="absolute text-center [text-wrap:balance] text-transparent top-[50%] w-full text-[40px] tracking-[4px] py-[20px]"
+        >
+          <span
+            class="text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]"
+            >Benjamin Le <br
+          /></span>
+          <span
+            class="flex-col inline-flex text-[#6fff2c] font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)] h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
+          >
+            <ul class="block animate-text-slide leading-tight [&_li]:block">
+              <li>IT/Cybersecurity Enthusiast</li>
+              <li>CS Student</li>
+              <li>Self-Starter</li>
+              <li>CTF Player</li>
+              <li>Homelab User</li>
+              <li aria-hidden="true">IT/Cybersecurity Enthusiast</li>
+            </ul>
+          </span>
         </div>
       </div>
     </section>
-    <section>
-      Testing
-    </section>
+    <section>Testing</section>
   </body>
 </html>
