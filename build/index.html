@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,7 +76,7 @@
             >Benjamin Le <br
           /></span>
           <span
-            class="flex-col inline-flex text-[#6fff2c] font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)] h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
+            class="flex-col inline-flex mt-[2vh] text-[#6fff2c] font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)] h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
           >
             <ul class="block animate-text-slide leading-tight [&_li]:block">
               <li>IT/Cybersecurity Enthusiast</li>
@@ -88,6 +88,7 @@
             </ul>
           </span>
           <div class="flex justify-center">
+            <a href="#about" class="inline-block">
             <button class="
                 mt-[8vw]
                 group
@@ -121,14 +122,35 @@
               </span>
               <p class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all
                    duration-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]">About Me</p>
-              <span class="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Let's Go!
+              <span class="group-hover:translate-x-0  group-hover:opacity-100 absolute translate-x-full opacity-0  transition-all duration-200">Let's Go!
               </span>
               <span class="group-hover:w-[2vw] absolute right-0 h-full w-5  border-y border-r  border-white transition-all duration-500">
               </span>
             </button>
+            </a>
           </div>
           <script src="https://cdn.tailwindcss.com"></script>
         </div>
       </div>
+    </section>
+    <section id="about" class="container flex flex-col items-start pl-[10vw]">
+      <div class="relative flex ">
+        <span class="absolute -left-[3vw] w-[3vh] h-[6vh] mt-[10vh] -ml-[2vw] border-l-4 border-white"></span>
+        <h1 class="text-5xl text-white mt-[10vh] -ml-[4vw]">About</h1>
+      </div>
+      
+      <div class= "text-2xl mt-[2vw] text-white">
+        <p> I'm junior at the University of Delaware majoring in Computer Science with a concentration in Cybersecurity. I have always been facinated with 
+          technology at a young age and was always toying around on my dad's computer; figuring out the use of different tools, settings, commands, etc. I eventually found
+          the internet and foolishly downloaded a Trojan virus from an AD promising the free download of Minecraft.
+        </p>
+        <p>
+          This ignited my curiosity of the security and services that go into the devices we use everyday to protect us from such threats. I quickly became the "IT guy"
+          of my family--troubleshooting printer network issues, setting up devices, and eventually monitoring home network traffic. What started as a hobby evolved into a deep passion. Now I want to
+          share this passion beyond just my family, spreading awareness and aiding others navigate and secure their technology. 
+        </p>
+      </div>
+    </section>
+      
   </body>
 </html>
