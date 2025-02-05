@@ -624,6 +624,11 @@ video {
   order: 2;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -712,6 +717,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[10vh\] {
+  height: 10vh;
 }
 
 .w-5 {
@@ -889,6 +898,10 @@ video {
 
 .border-r {
   border-right-width: 1px;
+}
+
+.border-l-8 {
+  border-left-width: 8px;
 }
 
 .border-white {
