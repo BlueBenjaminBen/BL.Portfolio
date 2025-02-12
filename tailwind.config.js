@@ -7,7 +7,7 @@ module.exports = {
         'monoton': ['Monoton', 'sans-serif'],
       },
       animation:{
-        'text-slide': 'text-slide 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+        'text-slide': 'text-slide 9.5s cubic-bezier(0.83, 0, 0.17, 1) infinite',
       },
       keyframes: {
         'text-slide': {
