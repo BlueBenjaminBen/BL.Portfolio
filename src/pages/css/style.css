@@ -719,10 +719,6 @@ video {
   height: 100vh;
 }
 
-.h-\[10vh\] {
-  height: 10vh;
-}
-
 .w-5 {
   width: 1.25rem;
 }
@@ -898,10 +894,6 @@ video {
 
 .border-r {
   border-right-width: 1px;
-}
-
-.border-l-8 {
-  border-left-width: 8px;
 }
 
 .border-white {
