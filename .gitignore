@@ -1,1 +1,4 @@
 node_modules
+
+#Ignore future pictures and videos
+/build/media
