@@ -21,13 +21,13 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Copy index.html to root
-        run: cp src/html/index.html ./index.html  # Adjust based on your structure
+        run: cp build/HTML/index.html ./index.html  # Adjust based on your structure
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  # Corrected action name
+        uses: actions/upload-artifact@v4  
         with:
           name: github-pages
-          path: .  # This uploads everything in the repository
+          path: .  
 
   deploy:
     environment:
@@ -44,4 +44,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # This is the correct action for deployment
+        uses: actions/deploy-pages@v4  
