@@ -27,7 +27,7 @@ jobs:
         run: find . -type l -exec rm {} +
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4  
+        uses: actions/upload-artifact@v1
         with:
           name: github-pages
           path: ./build
