@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if you're using a different branch
+      - main  # Change this if your default branch is different
 
 permissions:
   contents: read
@@ -21,10 +21,10 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Copy index.html to root
-        run: cp src/html/index.html ./index.html
+        run: cp src/html/index.html ./index.html  # Adjust based on your structure
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4  # Updated to v4
         with:
           path: .
 
@@ -37,4 +37,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4  # Updated to v4
