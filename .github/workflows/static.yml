@@ -21,7 +21,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Clean build directory
-        run: rm -rf build/*
+        run: rm -rf build/HTML/*
 
       - name: Copy index.html to root
         run: cp build/HTML/index.html ./index.html  
