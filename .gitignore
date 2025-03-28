@@ -1,8 +1,5 @@
 node_modules
 
-#Ignore future pictures and videos
-/build/media
-
 #Ignore .DS_Store
 .DS_Store
 
