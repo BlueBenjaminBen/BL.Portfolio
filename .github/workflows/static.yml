@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - main  # Change if your default branch is different
 
 permissions:
   contents: read
@@ -24,9 +24,10 @@ jobs:
         run: cp src/html/index.html ./index.html  # Adjust based on your structure
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4  # Updated to v4
+        uses: actions/upload-artifact@v4  # Corrected action name
         with:
-          path: .
+          name: github-pages
+          path: .  # This uploads everything in the repository
 
   deploy:
     environment:
@@ -35,6 +36,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: .
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4  # Updated to v4
+        uses: actions/deploy-pages@v4  # This is the correct action for deployment
