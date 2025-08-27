@@ -7,14 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const total    = track.children.length;
 
   // aspect classes for each slide index: 0 = horizontal, others = vertical
-  const aspectByIndex = ["aspect-[21/9]", "aspect-[4/4]", "aspect-[4/4]", "aspect-[4/4]"];
+  const aspectByIndex = ["aspect-[21/9]", // wide first slide, fallback to 16:9 on desktop
+  "aspect-square md:aspect-[4/4]",  // square on mobile, 4:3 on desktop
+  "aspect-square md:aspect-[4/4]",
+  "aspect-square md:aspect-[4/4]"];
 
   let index = 0;
 
   function applyAspect(i) {
     // remove all possible aspect classes, then add the one for this slide
-    wrapper.classList.remove(...new Set(aspectByIndex));
-    wrapper.classList.add(aspectByIndex[i]);
+    const base = "group relative w-full overflow-hidden border-8 border-double transition-all duration-500";
+    wrapper.className = `${base} ${aspectByIndex[i]}`;
   }
 
   function updateUI() {
