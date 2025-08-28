@@ -20,14 +20,14 @@
   </head>
   <body class="bg-blue-950">
     <div id="navbar"></div>
-    <section class="w-screen">
+    <section class="w-screen overflow-hidden">
       <div class="w-screen h-screen flex-auto relative">
         <video
           autoplay
           loop
           muted
           playsinline
-          class="w-full h-full object-cover"
+          class="absolute inset-0 w-full h-full object-cover"
         >
           <source
             src="./build/media/vids/youtube_Okb1TjsZlm0_1920x1080_h264_mute.mp4"
@@ -35,20 +35,25 @@
           Video Not available
         </video>
         <img
-          class="rounded-full w-[20vw] h-[20vw] md:w-[20vw] md:h-[20vw] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full object-cover"
-          src="./build/media/img/IMG_4750.jpg"
+          class="rounded-full w-40 h-40 md:w-[20vw] md:h-[20vw] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-full object-cover"
+          src="./build/media/img/me.jpg"
         />
         <div
-          class="absolute text-center [text-wrap:balance] top-[50%] w-full text-3xl tracking-[4px] py-12"
+          class="absolute text-center [text-wrap:balance] top-[50%] w-full text-4xl lg:text-3xl tracking-[4px] py-12"
         >
           <span
             class="text-white font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]"
             >Benjamin Le <br
           /></span>
           <span
-            class="flex-col inline-flex mt-[2vh] text-[#6fff2c] font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)] h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.4xl)*theme(lineHeight.tight))] overflow-hidden"
+            class="mt-3 inline-flex flex-col items-center
+           text-[#6fff2c] font-semibold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]
+           text-xl sm:text-xl md:text-2xl lg:text-3xl
+           leading-[1] h-[1em] overflow-hidden"
           >
-            <ul class="block animate-text-slide leading-tight [&_li]:block">
+            <ul class="animate-text-slide-em will-change-transform leading-[1]
+               [&_li]:h-[1em] [&_li]:leading-[1] [&_li]:block
+               [&_li]:whitespace-nowrap">
               <li>IT/Cybersecurity Enthusiast</li>
               <li>CS Student</li>
               <li>Self-Starter</li>
@@ -57,20 +62,20 @@
               <li aria-hidden="true">IT/Cybersecurity Enthusiast</li>
             </ul>
           </span>
-          <div class="flex justify-center">
+          <div class="mt-8 flex justify-center">
             <a href="#about" class="inline-block">
               <button
-                class="mt-[6vh] group p-5 cursor-pointer relative text-xl font-normal border-0 flex items-center justify-center bg-transparent text-white h-[2vw] w-[15vw] overflow-hidden transition-all duration-100"
+                class="group p-5 cursor-pointer relative text-base lg:text-xl font-normal border-0 flex items-center justify-center bg-transparent text-white w-[40vw] h-[2vw] lg:h-[2vw] lg:w-[15vw] overflow-hidden transition-all duration-100"
               >
                 <span
                   class="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-white transition-all duration-500"
                 >
                 </span>
-                <p
+                <span
                   class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all duration-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0.5,0.8)]"
                 >
                   About Me
-                </p>
+                </span>
                 <span
                   class="group-hover:translate-x-0 group-hover:opacity-100 absolute translate-x-full opacity-0 transition-all duration-200"
                   >Let's Go!
@@ -88,13 +93,10 @@
     </section>
     <section id="about" class="container flex flex-col items-start pl-[10vw]">
       <div class="relative flex">
-        <span
-          class="absolute -left-[3vw] w-[3vh] h-[6vh] mt-[10vh] -ml-[2vw] border-l-4 border-white"
-        ></span>
-        <h1 class="text-5xl text-white mt-[10vh] -ml-[4vw]">About</h1>
+        <h1 class="text-2xl lg:text-5xl text-white mt-[10vh] -ml-[4vw]">| About</h1>
       </div>
 
-      <div class="text-2xl mt-[2vw] text-white">
+      <div class="text-sm mr-5 md:text-2xl mt-[2vw] text-white">
         <p>
           I'm a senior majoring in Computer Science with a concentration in
           Cybersecurity at the University of Delaware. I have always been
@@ -115,7 +117,7 @@
           awareness and aiding others navigate and secure their technology.
         </p>
       </div>
-      <div class="mt-[10vh] mb-[5vh] text-white text-2xl">
+      <div class="text-sm mr-5 md:text-2xl mt-[10vh] mb-[5vh] text-white ">
         <p>
           I invite you to check out my work, projects, and experiences that will
           give you a better insight into my skillset, what I'm passionate in,
