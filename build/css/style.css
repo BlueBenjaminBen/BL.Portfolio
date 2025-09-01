@@ -734,6 +734,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -742,16 +746,8 @@ video {
   margin-top: 10vh;
 }
 
-.mt-\[1vh\] {
-  margin-top: 1vh;
-}
-
 .mt-\[2vw\] {
   margin-top: 2vw;
-}
-
-.ml-0 {
-  margin-left: 0px;
 }
 
 .inline-block {
@@ -776,6 +772,10 @@ video {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-2\.5 {
@@ -804,10 +804,6 @@ video {
 
 .h-\[2vw\] {
   height: 2vw;
-}
-
-.h-\[5vh\] {
-  height: 5vh;
 }
 
 .h-auto {
@@ -1020,12 +1016,6 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1042,12 +1032,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1469,10 +1453,6 @@ video {
     margin-top: 13vh;
   }
 
-  .md\:ml-\[\] {
-    margin-left: ;
-  }
-
   .md\:aspect-\[4\/4\] {
     aspect-ratio: 4/4;
   }
@@ -1552,6 +1532,11 @@ video {
     line-height: 2rem;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1560,11 +1545,6 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:opacity-0 {
@@ -1577,13 +1557,6 @@ video {
 
   .group:hover .md\:group-hover\:opacity-100 {
     opacity: 1;
-  }
-
-  @media (min-width: 1024px) {
-    .md\:lg\:text-6xl {
-      font-size: 3.75rem;
-      line-height: 1;
-    }
   }
 }
 
@@ -1598,10 +1571,6 @@ video {
 
   .lg\:ml-8 {
     margin-left: 2rem;
-  }
-
-  .lg\:ml-\[5vw\] {
-    margin-left: 5vw;
   }
 
   .lg\:mr-16 {
